@@ -65,7 +65,10 @@ Antes del primer flujo, verificar Python (`python --version` o `python3 --versio
   - Validar correspondencia 1:1 entre IDs. Si faltan, listarlos y pedir confirmacion para continuar con `[PROMPT_FALTANTE:id]` o detener.
 - Fase 2 (borrador por secciones):
   - Para cada marcador, generar la seccion con el prompt, el contexto del usuario y el codigo existente, y sustituir el marcador manteniendo el texto fijo de la plantilla.
-  - Tabla de contenido inicial si hay 4 o mas encabezados H2/H3.
+  - La plantilla reproduce la estructura de `plantilla.docx` (Diseño detallado y desarrollo): conservar el orden, la numeracion y los titulos de las secciones, las tablas y el texto fijo. No agregar ni quitar secciones.
+  - Si el marcador va seguido de una tabla, completar esa tabla (sustituir los `{campo}` y agregar filas) y eliminar el marcador. En diseño detallado, repetir el bloque de componente una vez por componente.
+  - En el documento final no deben quedar marcadores `<!-- PROMPT -->` ni valores `{campo}` sin sustituir.
+  - La plantilla ya incluye la tabla de contenido: no generar otra.
   - Diagramas Mermaid solo si el contenido describe arquitectura, flujos o secuencias.
   - Gantt en Mermaid solo si el usuario lo pide o el contexto incluye hitos.
 - Fase 3 (persistencia):
