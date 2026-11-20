@@ -1,6 +1,6 @@
 ---
 name: documentacion
-description: Crea, revisa y mantiene documentacion de proyectos (documentos de desarrollo, README, guias, docstrings) en español neutro, y convierte documentos Word a Markdown y viceversa con un script de Python multiplataforma. Usar cuando el usuario pida crear un documento de desarrollo, revisar o mejorar documentacion existente, o importar/exportar documentos Word (.docx).
+description: Usar cuando el usuario pida crear un documento de desarrollo, revisar o mejorar documentacion existente, o importar/exportar documentos Word de la plantilla Documento de Diseño Detallado y Desarrollo del requerimiento.
 ---
 
 # Documentacion
